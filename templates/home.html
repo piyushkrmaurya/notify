@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Notify</title>
+</head>
+<body>
+{% if name %}
+Hello {{name}}!
+{% else %}
+<form method="get" action="/">
+Enter your name: <br>
+<input type="text" name="name" />
+<input type="submit" value="submit" />
+</form>
+{% endif %}
+</body>
+</html>
